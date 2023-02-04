@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink, Link } from 'react-router-dom'
+import {BsSearch} from 'react-icons/bs'
 export const Header = () => {
   return (
     <>
@@ -19,13 +20,18 @@ export const Header = () => {
       </header>
       <header className="header-upper py-3">
         <div className="container-xxl">
-          <div className="row">
+          <div className="row align-items-center">
             <div className="col-2">
-              <h2>
-                <Link> Coders</Link>
+              <h2 className='text-white'>
+                Coders
               </h2>
             </div>
-            <div className="col-5"></div>
+            <div className="col-5">
+              <div className="input-group mb-3">
+                <input type="text" className="form-control py-2" placeholder="Search Product Here" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                  <span className="input-group-text" id="basic-addon2"><BsSearch className='fs-6'/> </span>
+              </div>
+            </div>
             <div className="col-5"></div>
           </div>
         </div>
