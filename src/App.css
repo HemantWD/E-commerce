@@ -10,6 +10,7 @@
   --color-febd69: #febd69;
   --color-232f3e: #232f3e;
   --color-bf4800: #bf4800;
+  --color-f5f5f7: #f5f5f7;
 }
 
 body {
@@ -36,6 +37,17 @@ a {
 
 .gap-30 {
   gap: 30px;
+}
+.button{
+  background-color: var(--color-232f3e);
+  color: white;
+  font-size: 14px;
+  padding: 13px 33px;
+  border-radius: 15px;
+}
+.button:hover{
+  background-color: var(--color-febd69);
+  color: var(--color-131921);
 }
 
 
@@ -115,6 +127,7 @@ footer .input-group-text {
 
 /* Home Page Start Here */
 
+/* Home Wrapper-1 Starts */
 .main-banner-content {
   top: 18%;
   left: 5%;
@@ -144,5 +157,47 @@ footer .input-group-text {
   letter-spacing: 0.4px;
   color: var(--color-131921);
 }
+
+.small-banner-content {
+  top: 25%;
+  left: 10%;
+}
+
+.small-banner-content h4 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color-bf4800);
+  margin: 0 0 12px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.small-banner-content h5 {
+  font-size: 22px;
+  line-height: 34px;
+  letter-spacing: -2px;
+  font-weight: 500;
+  text-transform: none;
+}
+
+.small-banner-content p {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+  color: var(--color-131921);
+}
+
+.small-banner{
+  width: 49%;
+}
+/* Home Wrapper-1 Ends */
+
+/* Home Wrapper-2 Starts */
+.home-wrapper-2{
+  background-color: var(--color-f5f5f7);
+}
+
+/* Home Wrapper-2 Ends */
 
 /* Home Page Ends Here */
