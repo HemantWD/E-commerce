@@ -11,8 +11,13 @@
   --color-232f3e: #232f3e;
   --color-bf4800: #bf4800;
   --color-f5f5f7: #f5f5f7;
+  --color-ededed: #ededed;
 }
-
+.card-wrapper{
+  background-color: white;
+  box-shadow: 0 0 10 #0000001a;
+  padding: 15px;
+}
 body {
   font-family: 'Rubik', sans-serif;
 }
@@ -38,14 +43,16 @@ a {
 .gap-30 {
   gap: 30px;
 }
-.button{
+
+.button {
   background-color: var(--color-232f3e);
   color: white;
   font-size: 14px;
   padding: 13px 33px;
   border-radius: 15px;
 }
-.button:hover{
+
+.button:hover {
   background-color: var(--color-febd69);
   color: var(--color-131921);
 }
@@ -188,16 +195,74 @@ footer .input-group-text {
   color: var(--color-131921);
 }
 
-.small-banner{
+.small-banner {
   width: 49%;
 }
+
 /* Home Wrapper-1 Ends */
 
 /* Home Wrapper-2 Starts */
-.home-wrapper-2{
+.home-wrapper-2 {
   background-color: var(--color-f5f5f7);
 }
 
+/* Categories Section */
+
+.categories {
+  background-color: white;
+  box-shadow: 0 0 10 #0000001a;
+  padding: 15px;
+}
+
+.categories>div {
+  width: 25%;
+  padding: 10px 10px 10px 20px;
+
+}
+
+.categories>div>div{
+  width: 60%;
+}
+
+.categories>div:nth-child(1),
+.categories>div:nth-child(2),
+.categories>div:nth-child(3),
+.categories>div:nth-child(4) {
+  border-bottom: 1px solid var(--color-ededed);
+}
+
+.categories>div:nth-child(1),
+.categories>div:nth-child(2),
+.categories>div:nth-child(3) {
+  border-right: 1px solid var(--color-ededed);
+}
+
+.categories>div:nth-child(5),
+.categories>div:nth-child(6),
+.categories>div:nth-child(7) {
+  border-right: 1px solid var(--color-ededed);
+}
+
+/* Categories Ends */
+/* Marquee Section */
+
+/* Marquee Section Ends */
 /* Home Wrapper-2 Ends */
 
 /* Home Page Ends Here */
+
+
+/* Blogcard Part Starts Here */
+.blog-card{
+  background-color: white;
+  border-radius: 10px;
+}
+.blog-card img{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.blog-content{
+  padding: 15px;
+}
+
+/* Bloacard Part Ends Here */
