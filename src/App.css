@@ -12,6 +12,14 @@
   --color-bf4800: #bf4800;
   --color-f5f5f7: #f5f5f7;
   --color-ededed: #ededed;
+  --color-777777: #777777;
+  --color-1c1c1b: #1c1c1b;
+}
+.section-heading{
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 500;
+  margin-bottom: 30px;
 }
 .card-wrapper{
   background-color: white;
@@ -264,5 +272,61 @@ footer .input-group-text {
 .blog-content{
   padding: 15px;
 }
+.blog-content.date
+{
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: var(--color-777777);
+  padding: 0;
 
-/* Bloacard Part Ends Here */
+}
+
+.blog-content h5{
+  font-size: 18;
+  color: var(--color-131921);
+}
+.blog-content p.desc{
+  font-size: 13px;
+  line-height: 22px;
+  color: var(--color-777777);
+}
+
+/* Blogcard Part Ends Here */
+
+/* Product Featured Collection */
+.product-card{
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.product-card:hover .action-bar{
+  right: 15px;
+}
+.product-card .product-details h6{
+ color: var(--color-3b4149); 
+ font-size: 13px;
+
+}
+.product-card .product-details h5{
+  font-size: 15px;
+  color: var(--color-1c1c1b);
+}
+.product-card .product-details p.price{
+  font-size: 16px;
+  color: var(--color-1c1c1b);
+}
+.action-bar {
+  top: 10%;
+  right: -23px;
+  transition: .3s;
+}
+.whislist-icon{
+  top: 2%;
+  right: 15px;
+}
+
+/* Product Featured Collection Ends */
