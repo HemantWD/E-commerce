@@ -15,17 +15,20 @@
   --color-777777: #777777;
   --color-1c1c1b: #1c1c1b;
 }
-.section-heading{
+
+.section-heading {
   font-size: 26px;
   line-height: 32px;
   font-weight: 500;
   margin-bottom: 30px;
 }
-.card-wrapper{
+
+.card-wrapper {
   background-color: white;
   box-shadow: 0 0 10 #0000001a;
   padding: 15px;
 }
+
 body {
   font-family: 'Rubik', sans-serif;
 }
@@ -228,7 +231,7 @@ footer .input-group-text {
 
 }
 
-.categories>div>div{
+.categories>div>div {
   width: 60%;
 }
 
@@ -261,19 +264,21 @@ footer .input-group-text {
 
 
 /* Blogcard Part Starts Here */
-.blog-card{
+.blog-card {
   background-color: white;
   border-radius: 10px;
 }
-.blog-card img{
+
+.blog-card img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.blog-content{
+
+.blog-content {
   padding: 15px;
 }
-.blog-content.date
-{
+
+.blog-content.date {
   font-size: 13px;
   line-height: 24px;
   text-transform: uppercase;
@@ -284,11 +289,12 @@ footer .input-group-text {
 
 }
 
-.blog-content h5{
+.blog-content h5 {
   font-size: 18;
   color: var(--color-131921);
 }
-.blog-content p.desc{
+
+.blog-content p.desc {
   font-size: 13px;
   line-height: 22px;
   color: var(--color-777777);
@@ -297,36 +303,70 @@ footer .input-group-text {
 /* Blogcard Part Ends Here */
 
 /* Product Featured Collection */
-.product-card{
+.product-card {
   padding: 15px;
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
 }
-.product-card:hover .action-bar{
+.product-card .product-images{
+  height: 270px;
+}
+
+.product-card .product-images img{
+  object-fit: contain;
+}
+.product-card:hover .action-bar {
   right: 15px;
 }
-.product-card .product-details h6{
- color: var(--color-3b4149); 
- font-size: 13px;
+
+.product-card .product-images>img:last-child {
+  display: none;
 
 }
-.product-card .product-details h5{
+
+.product-card:hover .product-images>img:nth-child(1) {
+  display: none;
+}
+
+.product-card:hover .product-images>img:last-child {
+  display: block;
+} 
+
+.product-card .product-details h6 {
+  color: var(--color-3b4149);
+  font-size: 13px;
+
+}
+
+.product-card .product-details h5 {
   font-size: 15px;
   color: var(--color-1c1c1b);
 }
-.product-card .product-details p.price{
+
+.product-card .product-details p.price {
   font-size: 16px;
   color: var(--color-1c1c1b);
 }
+
 .action-bar {
   top: 10%;
   right: -23px;
   transition: .3s;
 }
-.whislist-icon{
+
+.whislist-icon {
   top: 2%;
   right: 15px;
 }
 
 /* Product Featured Collection Ends */
+
+/* Special Product */
+.special-product-card{
+  padding: 20x 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+/* Special Products ends */

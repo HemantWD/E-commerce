@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Marquee from "react-fast-marquee";
 import Blogcard from '../components/Blogcard';
 import ProductCard from '../components/ProductCard';
+import SpecialProducts from '../components/SpecialProducts';
 export default function Home() {
   return (
     <>
@@ -177,6 +178,37 @@ export default function Home() {
         </div>
       </section>
       {/* Categories Section Ends */}
+      {/* Featured Collection */}
+      <section className='featured-wrapper home-wrapper-2 py-5'>
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Featured Collection</h3>
+            </div>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
+        </div>
+      </section>
+      {/* Featured Collection Ends Here */}
+      {/* Special Products */}
+      <section className='special-wrapper py-5 home-wrapper-2'>
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className='section-heading'>Special Products</h3>
+            </div>
+          </div>
+          <div className="row">
+            <SpecialProducts />
+            <SpecialProducts />
+            <SpecialProducts />
+          </div>
+        </div>
+      </section>
+      {/* Special Products Ends */}
       {/* Marquee Section Starts */}
       <section className="marque-wrapper home-wrapper-2 py-5">
         <div className="container-xxl">
@@ -216,20 +248,7 @@ export default function Home() {
       </section>
       {/* Marquee Section Ends */}
 
-      {/* Featured Collection */}
-      <section className='blog-wrapper home-wrapper-2 py-5'>
-        <div className="container-xxl">
-          <div className="row">
-            <div className="col-12">
-              <h3 className="section-heading">Featured Collection</h3>
-            </div>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-          </div>
-        </div>
-      </section>
+
       <section className='blog-wrapper home-wrapper-2 py-5'>
         <div className="container-xxl">
           <div className="row">
