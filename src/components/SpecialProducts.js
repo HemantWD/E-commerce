@@ -43,7 +43,7 @@ const SpecialProducts = () => {
                                         className="progress-bar"
                                         role="progressbar"
                                         style={{ width: "25%" }}
-                                        aria-valuenow="25"
+                                        aria-valuenow="50"
                                         aria-valuemin="0"
                                         aria-valuemax="100"
                                     ></div>
